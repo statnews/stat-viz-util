@@ -4,7 +4,7 @@
   "description": "Utilities for rendering charts with ChartJS ",
   "main": "dist/stat-viz-util.js",
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
