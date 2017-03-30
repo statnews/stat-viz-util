@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("csvtojson"), require("whatwg-fetch"));
+	else if(typeof define === 'function' && define.amd)
+		define(["csvtojson", "whatwg-fetch"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("csvtojson"), require("whatwg-fetch")) : factory(root["csvtojson"], root["whatwg-fetch"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(this, function(__WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_6__) {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -242,3 +252,4 @@ module.exports = require("whatwg-fetch");
 
 /***/ })
 /******/ ]);
+});

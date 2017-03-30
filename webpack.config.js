@@ -5,7 +5,8 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'stat-viz-util.js'
+    filename: 'stat-viz-util.js',
+    libraryTarget: 'umd'
   },
   target: 'node',
   externals: [nodeExternals()]
